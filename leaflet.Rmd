@@ -1,0 +1,19 @@
+---
+title: "leaflet"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+mymap <- leaflet()%>%
+          addTiles()
+mymap
+```
+
+
+```{r}
+library(leaflet)
+mymap <- mymap %>%
+addMarkers(lat=-4.360361, lng = 15.267005, popup="Kinshasa")
+mymap
+```
