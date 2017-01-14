@@ -1,0 +1,12 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r fig.align='center',fig.cap='MPG in comparison with the actual dry vehlicle weight'}
+plot(mtcars$wt, mtcars$mpg, xlab = "Weight", ylab = "mpg")
+```
+
